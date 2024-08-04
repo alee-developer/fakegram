@@ -40,6 +40,7 @@ dependencies:
   intl: any
   fluttertoast: any
   shared_preferences: any
+  provider: any
 
 dev_dependencies:
   flutter_test:
