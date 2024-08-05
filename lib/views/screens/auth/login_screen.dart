@@ -41,7 +41,6 @@ class LoginScreen extends StatelessWidget {
                 5.height,
                 view.forgetPasswordView(),
                 50.height,
-                view.policyView(),
                 ButtonWidgets().authButtonView(onPressed: () {
                   if (loginKey.currentState!.validate()) {}
                 }, LOGIN, size: Size.fromWidth(context.fullWidth)),

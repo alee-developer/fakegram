@@ -46,7 +46,7 @@ class AuthWidgets {
 
   Widget policyView() {
     return CheckboxListTile(
-      title: Text("Confirm "),
+      title: const Text("By click "),
         controlAffinity: ListTileControlAffinity.leading,
         value: false, onChanged: (value) {});
   }
