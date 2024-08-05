@@ -15,3 +15,10 @@ const primaryColor = Color(0xfff6ac3a);
 const secondaryColor =Color(0xFFf4b44f);
 const dotColor = Color(0xFFf4b44f);
 const bgColor = Color(0xfff6ac3a);
+
+// light theme
+const textFieldBgLightColor = Color(0xffFAFAFA);
+const authButtonLightBGColor = Color(0xff3797EF);
+
+// dark theme colors
+const authButtonDarkBGColor = Color(0xff3797EF);

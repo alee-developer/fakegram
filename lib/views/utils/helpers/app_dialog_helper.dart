@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fakegram/views/utils/constants.dart';
+import 'package:fakegram/views/utils/constants/constants.dart';
 import 'package:fakegram/views/utils/extensions/context_extensions.dart';
 import 'package:fakegram/views/utils/extensions/text_style_extensions.dart';
 

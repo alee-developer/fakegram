@@ -1,22 +1,23 @@
-import 'package:fakegram/views/screens/auth/auth_widgets.dart';
-import 'package:fakegram/views/utils/constants/constants.dart';
 import 'package:fakegram/views/utils/extensions/context_extensions.dart';
 import 'package:fakegram/views/utils/extensions/int_extensions.dart';
-import 'package:fakegram/views/utils/extensions/string_extensions.dart';
 import 'package:fakegram/views/utils/extensions/widget_extensions.dart';
-import 'package:fakegram/views/utils/widgets/button_widgets.dart';
-import 'package:fakegram/views/utils/widgets/text_filed_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:fakegram/views/utils/extensions/string_extensions.dart';
 
-class LoginScreen extends StatelessWidget {
-  LoginScreen({super.key});
+import '../../utils/constants/constants.dart';
+import '../../utils/widgets/button_widgets.dart';
+import '../../utils/widgets/text_filed_widgets.dart';
+import 'auth_widgets.dart';
 
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
-  var loginKey = GlobalKey<FormState>();
+class ForgetPasswordScreen extends StatelessWidget {
+  const ForgetPasswordScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController emailController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
+    var loginKey = GlobalKey<FormState>();
+
     var view = AuthWidgets(context: context);
     return SafeArea(
       child: Scaffold(
@@ -26,29 +27,23 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                100.height,
+                60.height,
                 view.logoView(),
-                20.height,
-                view.titleView(LOGIN),
+                40.height,
+                view.titleView(FORGET_OASSWORD),
                 50.height,
                 TextFiledWidgets.appTextFieldView(emailController,
                     validator: (text) => text?.defaultValidator(),
-                    hintText: "$USERNAME_s $OR_s $EMAIL_s"),
+                    hintText: PASSWORD),
                 16.height,
                 TextFiledWidgets.appTextFieldView(passwordController,
                     validator: (text) => text?.defaultValidator(),
-                    hintText: PASSWORD),
-                5.height,
-                view.forgetPasswordView(),
+                    hintText: "Confirm $PASSWORD"),
                 50.height,
-                view.policyView(),
                 ButtonWidgets().authButtonView(onPressed: () {
                   if (loginKey.currentState!.validate()) {}
-                }, LOGIN, size: Size.fromWidth(context.fullWidth)),
-                50.height,
-                view.orSignupView(),
-                20.height,
-                view.doNotAccountView(Container(), SIGNUP)
+                }, SUBMIT, size: Size.fromWidth(context.fullWidth)),
+
               ],
             ).paddingSymmetric(horizontal: 10, vertical: 10).center(),
           ),

@@ -1,0 +1,1 @@
+const fakegrameLogoPath = "assets/logo/fakegram.png";
