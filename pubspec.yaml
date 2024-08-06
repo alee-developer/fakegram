@@ -42,6 +42,8 @@ dependencies:
   shared_preferences: any
   provider: any
   video_player: any
+  flutter_staggered_grid_view: any
+  cached_network_image: any
 
 dev_dependencies:
   flutter_test:

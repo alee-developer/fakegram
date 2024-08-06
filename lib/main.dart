@@ -1,4 +1,4 @@
-import 'package:fakegram/views/screens/landing/landing_screen.dart';
+import 'package:fakegram/views/screens/explore/explore_screen.dart';
 import 'package:fakegram/views/utils/themes/dark_theme.dart';
 import 'package:fakegram/views/utils/themes/light_theme.dart';
 import 'package:fakegram/views/utils/themes/theme_provider.dart';
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           theme: lightTheme,
           darkTheme: darkTheme,
           themeMode: themeProvider.themeMode,
-          home: LandingScreen(),
+          home: ExploreScreen(),
         );
       },
     );

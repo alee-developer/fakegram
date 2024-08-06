@@ -43,45 +43,6 @@ class CustomWidgets {
       ],
     );
   }
+
 }
 
-class CircularImageWithIcon extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.center,
-      children: <Widget>[
-        // Circular shape with border
-        Container(
-          width: 150,
-          height: 150,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            border: Border.all(color: Colors.blue, width: 4),
-          ),
-          child: ClipOval(
-            child: Image.network(
-              'https://via.placeholder.com/150',
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
-        // Icon at the bottom
-        Positioned(
-          bottom: 0,
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              shape: BoxShape.circle,
-            ),
-            child: Icon(
-              Icons.star,
-              color: Colors.blue,
-              size: 30,
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-}
