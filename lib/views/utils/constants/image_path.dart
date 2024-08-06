@@ -19,3 +19,10 @@ const reelIcon = "assets/logo/reel.png";
 // profile
 const activeProfileIcon = "assets/logo/active_profile.png";
 const profileIcon = "assets/logo/profile.png";
+
+// favorite
+const favoriteIcon = "assets/logo/favorite.png";
+const activeFavoriteIcon = "assets/logo/active_favorite.png";
+
+// icons
+const messengerIcon = "assets/logo/messenger.png";
